@@ -16,7 +16,7 @@
 
     <tbody>
         @foreach($data as $index=>$record)
-        <tr class="border-2">
+        <tr class="border-2 pt-3">
         <th class="border-2 text-left p-2 ">{{$index+1}}</th>
         <th class="border-2 text-left p-2">{{$allusers[$record->user_id]->name}}</th>
         <th class="border-2 text-left p-2"> 

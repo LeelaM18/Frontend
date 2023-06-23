@@ -32,7 +32,7 @@
     </div>
      <div class="grid  grid-cols-3 bg-red-300 p-3">
      <label class="col-span-1">Content</label>
-     <textarea style="height: 400px;" class="col-span-2" name="content"></textarea>
+     <textarea style="height: 400px;" class="col-span-2" name="content" ></textarea>
      @csrf
 </div>
 <input type="hidden" name="user_id" value="{{Auth::user()->id}}">

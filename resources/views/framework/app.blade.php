@@ -12,14 +12,11 @@
   require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' }});
   require(['vs/editor/editor.main'], function() {
     var editor = monaco.editor.create(document.getElementById('editorContainer'), {
-      value: '',
+      value:'',
       language: 'html', // Specify the desired language mode
     });
   });
-  function setupFormPost() {
-        var value = window.editor.getValue()
-        $("#content").val(value);
-    }
+  
 </script>
 </head>
 <body class="bg-gray-100 flex flex-col min-h-screen">

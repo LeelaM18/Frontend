@@ -45,9 +45,7 @@ class PostController extends Controller
     { 
         $this->stub='Create';
        return view('projectclr.post.create')->with('app',$this)->with('post',$post);
-       $code = preg_replace('/<\/script>/', '<\/script>', request()-> custom_script);
 
-$this->storeToMySQL($content);
 
     }
 
@@ -102,7 +100,7 @@ $this->storeToMySQL($content);
         $post=Post::where('slug',$slug)->first();
         $this->stub='edit';
         $this->authorize('update',$post);
-        return view ('projectclr.post.createedit')->with('post',$post)->with('app',$this); 
+        return view ('projectclr.post.update')->with('post',$post)->with('app',$this); 
     }
 
     /**

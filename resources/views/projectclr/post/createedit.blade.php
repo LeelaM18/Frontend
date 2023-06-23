@@ -26,13 +26,13 @@
      <div class="grid  grid-cols-3 bg-red-300 p-3">
      <label class="col-span-1">format</label>
       <select name="format"  value="{{$post->format}}" class="col-span-2"   >
-      <option value="code" @if($post['format']=='code' ) selected @endif>code</option>
-      <option value="text"  @if($post['format']=='text' ) selected @endif>text</option>
+          <option value="code" @if($post['format']=='code' ) selected @endif>code</option>
+          <option value="text"  @if($post['format']=='text' ) selected @endif>text</option>
       </select>
     </div>
      <div class="grid  grid-cols-3 bg-red-300 p-3">
      <label class="col-span-1">Content</label>
-     <code name="content" id="editorContainer" value="{{$post->content}}"style="height: 400px;" class="col-span-2" ></code>
+     <textarea name="content" id="editorContainer" value="{{$post->content}}"style="height: 400px;" class="col-span-2" ></textarea>
 
 </code>
      @csrf
