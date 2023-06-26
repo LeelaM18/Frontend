@@ -31,7 +31,7 @@ class PostController extends Controller
             $data=$post->paginate(20);
         }
         else
-        $data=$post->where('user_id',$user_id)->paginate(5);
+        $data=$post->where('user_id',$user->id)->paginate(5);
          
         return view('projectclr.post.index')->with('alert',$alert)->with('data',$data)->with('allusers',$allusers);
     }
